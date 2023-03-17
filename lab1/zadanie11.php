@@ -1,19 +1,7 @@
-<!DOCTYPE html>
+    <?php
+    $kostka = 0;
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Zadanie1.1</title>
+    $kostka = rand(1,6);
 
-        <?php 
-            $kostka = 0;
-            
-                $kostka = rand(1,6);
-
-                echo "Wylosowana liczba to ".$kostka;
-        ?>
-    </head>
-    <body>
-
-    </body>
-</html>
+    echo "Wylosowana liczba to ".$kostka;
+    ?>

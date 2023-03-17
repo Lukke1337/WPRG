@@ -1,24 +1,23 @@
-<!DOCTYPE html>
+<?php
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Zadanie1.3</title>
+$wulgaryzmy = array("kurde", "dupa", "Kurde", "Dupa");
 
-        <?php 
-            $censorar = arra("kurkawodna","cholipka");
-            $replace = "YIKES!";
-            readline();
-            foreach($censorar as $replace){
-                if (preg_match("$replace"));
-                {
-                    echo "HOLA!";
-                }
-            }
+echo "Wpisz zdanie do ocenzurowania: \n";
 
-        ?>
-    </head>
-    <body>
+$zdanie = readline();
+$cenzura = cenzura($zdanie, $wulgaryzmy);
 
-    </body>
-</html>
+echo $cenzura;
+
+function cenzura($zdanie, $wulgaryzmy) {
+    $slowa = explode(" ", $zdanie);
+
+    foreach ($slowa as $key => $slowo) {
+        if (in_array($slowo, $wulgaryzmy)) {
+            $slowa[$key] = str_repeat("*", strlen($slowo));
+        }
+    }
+    $cenzura = implode(" ", $slowa);
+    return $cenzura;
+}
+?>
