@@ -1,0 +1,214 @@
+/* Resetowanie stylów */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background-color: rgb(237, 237, 237);
+    color: rgb(89, 140, 163);
+    text-align: center;
+}
+
+a {
+    color: #565656;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+.registration {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0px auto;
+}
+.title {
+    background-color: #5dbcd2;
+    color: whitesmoke;
+    font-size: 64px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    height: 80px;
+    animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+    0% { color: whitesmoke }
+    10% { color: whitesmoke }
+    20% { color: #dddddd }
+    30% { color: gray }
+    40%  {color: dimgray }
+    50% { color: black }
+    60% { color: dimgray }
+    70% { color: gray }
+    80% { color: #dddddd }
+    90% { color: whitesmoke }
+    100% { color: whitesmoke }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: rgb(240, 240, 240);
+    height: 50px;
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.menu ul li {
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.menu ul li a:hover {
+    background-color: #5dbcd2;
+}
+
+.login-panel {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.login-panel form {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.login-panel label,
+.login-panel input[type="text"],
+.login-panel input[type="password"] {
+    width: 300px;
+}
+
+.login-button, .logout-button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.login-button:hover, .logout-button:hover {
+    background-color: #5dbcd2;
+}
+
+.left,
+.right {
+    background-color: aqua;
+    width: 25%;
+    height: auto;
+}
+
+.content {
+    background-color: #fff;
+    width: 50%;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.post {
+    margin-bottom: 30px;
+    border: 3px solid #5dbcd2;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #666;
+}
+
+#click {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+
+#click:hover {
+    background-color: #5dbcd2;
+    color: white;
+    cursor: pointer;
+}
+
+#kasuj {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: auto;
+    border: none;
+}
